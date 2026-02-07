@@ -8,6 +8,14 @@ pintarEstrellas=function(numeroEstrellas){
   }
   else if (numeroEstrellas == 1) {
      mostrarTextoEnDiv("estrellas","★☆☆☆☆");
+  }else if (numeroEstrellas == 2) {
+    mostrarTextoEnDiv("estrellas", "★★☆☆☆");
+  } else if (numeroEstrellas == 3) {
+    mostrarTextoEnDiv("estrellas", "★★★☆☆");
+  } else if (numeroEstrellas == 4) {
+    mostrarTextoEnDiv("estrellas", "★★★★☆");
+  } else if (numeroEstrellas == 5) {
+    mostrarTextoEnDiv("estrellas", "★★★★★");
   }
  
 }
@@ -32,9 +40,11 @@ calcularSueldo=function(){
    //E. muestra las ventas adicionales en el div "bono"
     //F. suma el bono y el sueldo base y muestra en el div "total"
     let total = SUELDO_BASE + bono ;
-    mostrarTextoEnDiv("total",total)
+    mostrarTextoEnDiv("total",total);
     //G. invocar a calcularEstrellas, guardar el resultado en una variable
+    let numeroEstrellas = calcularEstrellas(ventasMes);
     //H. con el valor obtenido, invocar a pintarEstrellas
+    pintarEstrellas(numeroEstrellas);
     //I. en el div "mensaje" muestra un mensaje <nombre> <apellido> este mes cobrará USD <sueldo>
     //tomando los valores y apellidos ingresados en las cajas y el sueldo calculado incluido los bonos
     //Ejemplo: Juan Perez este mes cobrará USD 560
