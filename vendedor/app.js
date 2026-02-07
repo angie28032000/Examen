@@ -28,6 +28,28 @@ calcularBono = function (ventasMes) {
     return 0;
   }
 }
+crearNuevo = function () {
+
+  habilitar("btnCalcular");
+  deshabilitar("btnNuevo");
+  habilitar("txtNombre");
+  habilitar("txtApellido");
+  habilitar("txtVentas");
+
+  mostrarTextoEnCaja("txtNombre", "");
+  mostrarTextoEnCaja("txtApellido", "");
+  mostrarTextoEnCaja("txtVentas", "");
+
+  pintarEstrellas(0);
+
+  mostrarTextoEnDiv("base", "");
+  mostrarTextoEnDiv("bono", "");
+  mostrarTextoEnDiv("total", "");
+  mostrarTextoEnDiv("mensaje", "");
+}
+
+
+
 
 calcularSueldo=function(){
    //A. recupera la información de nombre y apellido y guarda en variables
