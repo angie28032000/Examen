@@ -12,12 +12,23 @@ pintarEstrellas=function(numeroEstrellas){
  
 }
 
+calcularBono = function (ventasMes) {
+  if (ventasMes > META_VENTAS) {
+    let ventasAdicionales = ventasMes - META_VENTAS;
+    return ventasAdicionales * 30;
+  } else {
+    return 0;
+  }
+}
+
 calcularSueldo=function(){
    //A. recupera la información de nombre y apellido y guarda en variables
    //B. muestra el valor del sueldo base en el div "base"
    mostrarTextoEnDiv("base",SUELDO_BASE);
    //C. recupera la información de la caja de texto de ventas y guarda en una variable
+   let ventasMes = recuperarEntero("txtVentas");
    //D. invoca a la función calcularBono, pasándole el numero de ventas y guarda la respuesta en una variable
+   let bono = calcularBono (ventasMes);
    //E. muestra las ventas adicionales en el div "bono"
     //F. suma el bono y el sueldo base y muestra en el div "total"
     //G. invocar a calcularEstrellas, guardar el resultado en una variable
