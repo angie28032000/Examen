@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(800px 400px at 10% 10%, rgba(34,197,94,0.25), transparent),
+    radial-gradient(800px 400px at 90% 20%, rgba(59,130,246,0.25), transparent),
+    radial-gradient(600px 300px at 50% 90%, rgba(168,85,247,0.25), transparent);
+  z-index: -1;
+}
+
+.card {
+  background-color: rgba(17,24,39,0.92);
+  padding: 20px;
+  width: 380px;
+  border-radius: 12px;
+  margin: 40px auto;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.movilis {
+  height: 60px;
+}
+
+.krake{
+  height: 100px;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+input[type="button"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btnCalcular { background-color: #22c55e; }
+#btnNuevo { background-color: #f59e0b; }
+
+input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 15px;
+}
+
+.stars {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.mensaje {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.breakdown div {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.total {
+  margin-top: 6px;
+  font-size: 16px;
+}

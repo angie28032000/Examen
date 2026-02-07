@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de pago del vendedor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
+
+  
+</head>
+<body>
+
+  <div class="page-bg"></div>
+
+  <div class="card">
+    <div class="logos">
+      <img src="krakedev.png" alt="KrakeDev" class="krake">
+      <img src="movilis.png" alt="Movilis" class="movilis">
+    </div>
+
+    <div class="title">Cálculo de pago</div>
+
+    <div class="field">
+      <div class="label">Nombre</div>
+      <input type="text" id="txtNombre">
+    </div>
+
+    <div class="field">
+      <div class="label">Apellido</div>
+      <input type="text" id="txtApellido">
+    </div>
+
+    <div class="field">
+      <div class="label">Ventas del mes</div>
+      <input type="text" id="txtVentas" min="0">
+    </div>
+
+    <div class="buttons">
+      <input type="button" value="Calcular" id="btnCalcular" onclick="calcularSueldo()">
+      <input type="button" value="Nuevo" id="btnNuevo" disabled>
+    </div>
+
+    <div class="result">
+      <div id="estrellas" class="stars"></div>
+      <div id="mensaje" class="mensaje"></div>
+
+      <div class="breakdown">
+        <div>Sueldo base: <strong>USD <span id="base"></span></strong></div>
+        <div>Bono por ventas: <strong>USD <span id="bono"></span></strong></div>
+        <div class="total">TOTAL A RECIBIR: <strong>USD <span id="total"></span></strong></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

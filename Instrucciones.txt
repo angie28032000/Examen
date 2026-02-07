@@ -1,0 +1,86 @@
+SE CALIFICARÁ LOS COMMITS REALIZADOS HASTA LAS 22H00, CON LA COMPLETITUD DEL PUNTAJE.
+Cualquier commit posterior a las 22h00, se calificará sobre la mitad de la nota
+
+EJERCICIO 1
+En la carpeta que tiene su nombre, se encuentra un archivo con un for. 
+Grabar un audio donde explique paso a paso que ocurre con la variable del for. 
+Subir el audio en la misma carpeta.
+
+20 PUNTOS
+
+
+EJERCICIO 2
+80 PUNTOS
+
+Este programa nos permite calcular el sueldo que va a recibir un vendedor.
+Su meta base de ventas es 10 y su sueldo base es 400.
+Si supera la meta de 10 ventas, tendrá bonificaciones.
+A continuación se explica paso a paso lo que debes hacer como parte de tu examen.
+Cada vez que completes un numeral, debes probarlo y hacer un commit y un push.
+
+
+IMPORTANTE: al estar en etapa de formación, no se permite el uso de IA, en caso de que se detecte uso de IA, la nota del examen será 0 directamente.
+
+MAS IMPORTANTE: se calificará cada COMMIT
+
+SUPER IMPORTANTE: para recuperar datos de las cajas de texto, mostrar datos en las cajas, mostrar datos en los divs, habilitar o deshabilitar componentes, usar las funciones que están definidas en utilitarios.js
+
+
+1. Abrir la página index.html, sin llenar nada, dar clic en el botón Calcular. Abrir las herramientas de desarrollo en el navegador y ver el error que está dando. 
+Obtener una captura de pantalla del error, guardar el archivo con el nombre error.png en la carpeta de su proyecto y subir al repositorio, en el comentario del commit indicar brevemente la razón del error (commit + push)
+5 puntos
+
+2. Corregir el error, referenciando el archivo utilitarios.js desde el index.html. Una vez referenciado, vuelva a probar y debería haberse solucionado el error
+Sin llenar nada, dar clic en el botón y fijarse el sueldo base que se muestra en pantalla
+Revisar el código de app.js y modificar el sueldo base, cambiar la constante para que el sueldo base sea 500
+Probar que el cambio se vea en pantalla luego de presionar el botón, subir al repositorio (commit+push)
+5 puntos
+
+4. En el HTML, actualmente todas las cajas de texto tienen input type="text", vamos a cambiar la caja de texto donde se ingresa 
+el número de ventas a input type="number", esto nos permitirá que 
+el usuario solo ingrese números en esa caja de texto. Cambiar y comprobar que solo permite ingresar números (commit + push)
+5 puntos
+
+5. En app.js Crear la función calcularBono, recibe como parámetro el número de ventas del mes y retorna el valor del bono, con la siguiente lógica:
+	Por cada venta adicional a la meta, recibe 30 dólares adicionales.
+	Ejemplos: 
+		si vende 11 , tiene una venta adicional entonces retorna 30
+		si vende 15, tiene 5 ventas adicionales entonces retorna 150
+	Si completa solamente la meta de ventas o menos, retorna 0, no tiene bono
+	En calcularSueldo, realizar los ítems C, D y E
+Probar la pantalla con valores de 10, menores a 10 y mayores a 10 y validar que cumpla lo solicitado (commit+push)
+15 puntos
+
+6. Realizar el item F de calcularSueldo (commit + push)
+5 puntos
+	
+6. Crear la función calcularEstrellas, recibe como parámetro el número de ventas del mes. Retorna el número de estrellas, de acuerdo a la siguiente lógica:
+	Si vendió de 1 a 5 retorna 1 
+	Si vendió de 6 a 9 retorna 2
+	Si cumplió la meta(10), retorna 3
+	Si vendió de 11 a 14, retorna  4
+	Si vendió 15 o más retorna 5
+  commit + push
+15 puntos
+
+7.  Completar la función pintarEstrellas, actualmente permite pintar 1 y 2 estrellas, debe soportar pintar hasta 5.
+    Resolver los ítems G y H de calcularSueldo
+	commit + push
+10 puntos
+
+8. Resolver los ítems A, I , J de calcularSueldo (commit + push)
+10 puntos
+
+9. Crear una función crearNuevo, no recibe ni retorna nada. Se invoca desde el botón Nuevo.
+   Realiza lo siguiente: 
+	habilitar el botón calcular
+	deshabilitar el botón limpiar	
+	habilitar las 3 cajas de texto	
+	limpiar las 3 cajas de texto
+	limpiar las estrella, colocar en 0 estrellas
+	limpiar los mensajes que muestran los valores de abonos y sueldos
+	limpiar el mensaje al usuario 
+   (commit + push)
+
+10 puntos
+
