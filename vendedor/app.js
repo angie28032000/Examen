@@ -1,4 +1,4 @@
-const SUELDO_BASE = 400;
+const SUELDO_BASE = 500;
 const META_VENTAS = 10;
 
 
