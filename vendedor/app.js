@@ -28,6 +28,22 @@ calcularBono = function (ventasMes) {
     return 0;
   }
 }
+
+calcularEstrellas = function (ventasMes) {
+  if (ventasMes < META_VENTAS) {
+    return 0;
+  } else if (ventasMes == META_VENTAS) {
+    return 1;
+  } else if (ventasMes <= META_VENTAS + 1) {
+    return 2;
+  } else if (ventasMes <= META_VENTAS + 2) {
+    return 3;
+  } else if (ventasMes <= META_VENTAS + 3) {
+    return 4;
+  } else {
+    return 5;
+  }
+}
 crearNuevo = function () {
 
   habilitar("btnCalcular");
@@ -62,6 +78,7 @@ calcularSueldo=function(){
    //D. invoca a la función calcularBono, pasándole el numero de ventas y guarda la respuesta en una variable
    let bono = calcularBono (ventasMes);
    //E. muestra las ventas adicionales en el div "bono"
+   mostrarTextoEnDiv("bono", bono);
     //F. suma el bono y el sueldo base y muestra en el div "total"
     let total = SUELDO_BASE + bono ;
     mostrarTextoEnDiv("total",total);
