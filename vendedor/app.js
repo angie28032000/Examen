@@ -31,6 +31,8 @@ calcularSueldo=function(){
    let bono = calcularBono (ventasMes);
    //E. muestra las ventas adicionales en el div "bono"
     //F. suma el bono y el sueldo base y muestra en el div "total"
+    let total = SUELDO_BASE + bono ;
+    mostrarTextoEnDiv("total",total)
     //G. invocar a calcularEstrellas, guardar el resultado en una variable
     //H. con el valor obtenido, invocar a pintarEstrellas
     //I. en el div "mensaje" muestra un mensaje <nombre> <apellido> este mes cobrará USD <sueldo>
